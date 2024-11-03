@@ -1,0 +1,28 @@
+<html>
+	<head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+    </head>
+    <h1>Lightning Out App</h1>
+    <div id="lightning-out"></div>
+
+  <script src="https://breezybit--serverdev.sandbox.my.salesforce.com/lightning/lightning.out.js"></script>
+  <script>
+  	console.log("LWC component was created-Start");
+  	$Lightning.use("c:testApp", 
+  		function() {
+  			console.log("LWC component was created-2");
+  			$Lightning.createComponent(
+  				"c:testComponent", 
+  				{},
+  				"lightning-out",
+  				function(cmp) {
+  					console.log("LWC component was created-3");
+  				}
+  			);
+  		},
+  	   'https://breezybit--serverdev.sandbox.my.salesforce.com'
+  	  );
+  	console.log("LWC component loaded");
+  </script>
+</html>
