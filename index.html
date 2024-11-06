@@ -4,24 +4,5 @@
       <meta name="viewport" content="width=device-width, initial-scale=1" />
    </head>
    <h1>Lightning Out App</h1>
-   <div id="lightning-out"></div>
-   <script src="https://breezybit--serverdev.sandbox.my.salesforce.com/lightning/lightning.out.js"></script>
-   <script>
-      console.log("LWC component was created-1");
-      $Lightning.use("c:testApp", 
-      	function() {
-      		console.log("LWC component was created-2");
-      		$Lightning.createComponent(
-      			"c:bZB_ReportViewer", 
-      			{},
-      			"lightning-out",
-      			function(cmp) {
-      				console.log("LWC component was created-3");
-      			}
-      		);
-      	},
-         'https://breezybit--serverdev.sandbox.my.salesforce.com'
-        );
-      console.log("LWC component loaded");
-   </script>
+   <iframe src="https://breezybit--serverdev--c.sandbox.vf.force.com/apex/EmbeddingTest" width="100%" height="600px"></iframe>iframe>
 </html>
